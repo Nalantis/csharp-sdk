@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Nalantis", "Nalantis\Nalant
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NalantisTest", "NalantisTest\NalantisTest.csproj", "{B1916090-8C19-4062-84E0-FC57679BB124}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NalantisUsage", "NalantisUsage\NalantisUsage.csproj", "{F75C478A-08E5-4E23-9490-9C3BC6AD667B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -44,5 +46,17 @@ Global
 		{B1916090-8C19-4062-84E0-FC57679BB124}.Release|x64.Build.0 = Release|Any CPU
 		{B1916090-8C19-4062-84E0-FC57679BB124}.Release|x86.ActiveCfg = Release|Any CPU
 		{B1916090-8C19-4062-84E0-FC57679BB124}.Release|x86.Build.0 = Release|Any CPU
+		{F75C478A-08E5-4E23-9490-9C3BC6AD667B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F75C478A-08E5-4E23-9490-9C3BC6AD667B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F75C478A-08E5-4E23-9490-9C3BC6AD667B}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{F75C478A-08E5-4E23-9490-9C3BC6AD667B}.Debug|x64.Build.0 = Debug|Any CPU
+		{F75C478A-08E5-4E23-9490-9C3BC6AD667B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F75C478A-08E5-4E23-9490-9C3BC6AD667B}.Debug|x86.Build.0 = Debug|Any CPU
+		{F75C478A-08E5-4E23-9490-9C3BC6AD667B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F75C478A-08E5-4E23-9490-9C3BC6AD667B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F75C478A-08E5-4E23-9490-9C3BC6AD667B}.Release|x64.ActiveCfg = Release|Any CPU
+		{F75C478A-08E5-4E23-9490-9C3BC6AD667B}.Release|x64.Build.0 = Release|Any CPU
+		{F75C478A-08E5-4E23-9490-9C3BC6AD667B}.Release|x86.ActiveCfg = Release|Any CPU
+		{F75C478A-08E5-4E23-9490-9C3BC6AD667B}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

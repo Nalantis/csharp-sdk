@@ -9,7 +9,7 @@ namespace Nalantis.Models
         public Dictionary<string, List<string>> ConceptsPerCategory { get; }
         public List<string> Domains { get; }
         public List<Offset> Offsets { get; }
-        
+        public readonly string Content;
       
 
         public AnalysisResult(JObject analysisResult)
@@ -17,6 +17,7 @@ namespace Nalantis.Models
             ConceptsPerCategory = new Dictionary<string, List<string>>();
             Domains = new List<string>();
             Offsets = new List<Offset>();
+            Content = analysisResult["content"].Value<string>();
 
             foreach (var cat in analysisResult["category"])
             {
