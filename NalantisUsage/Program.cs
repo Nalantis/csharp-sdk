@@ -64,7 +64,7 @@ namespace NalantisUsage
             Console.WriteLine("Matches:");
             foreach (var document in matches.Documents)
             {
-                Console.WriteLine("\t> New Document: ");
+                Console.WriteLine($"\t> Document {document.FirstName} {document.LastName} ({document.Score}%): ");
                 foreach (KeyValuePair<string,List<MatchPair>> pair in document.MatchingConceptsPerCategory)
                 {
                     Console.WriteLine("\t\t> " + pair.Key + ":");

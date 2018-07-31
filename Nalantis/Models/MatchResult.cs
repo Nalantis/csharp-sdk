@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 
 namespace Nalantis.Models
@@ -23,9 +24,16 @@ namespace Nalantis.Models
     public class Document
     {
         public readonly Dictionary<string, List<MatchPair>> MatchingConceptsPerCategory;
+        public readonly string FirstName;
+        public readonly string LastName;
+        public readonly decimal Score;
 
         public Document(JToken json)
         {
+            FirstName = json["speedCV"]["firstName"].Value<string>();
+            LastName = json["speedCV"]["lastName"].Value<string>();
+            Score = decimal.Round(json["score"].Value<decimal>(), 2);
+            
             MatchingConceptsPerCategory = new Dictionary<string, List<MatchPair>>();
 
             foreach (var category in json["matchdetailsXML"]["category"])
