@@ -73,7 +73,16 @@ namespace Nalantis.Services
 
         private async Task<string> DoMatchCall(byte[] file, string type = "PROFILE")
         {
-            var cvsearchUrl = _serviceUrl + "/cvsearch";
+            string cvsearchUrl;
+            switch (type)
+            {
+                    case "PROFILE":
+                        cvsearchUrl = _serviceUrl + "/cvsearch";
+                        break;
+                    default:
+                        cvsearchUrl = _serviceUrl + "/profilesearch";
+                        break;
+            }
 
             using (var content = new MultipartFormDataContent())
             {
