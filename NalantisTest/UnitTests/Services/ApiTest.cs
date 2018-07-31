@@ -2,7 +2,7 @@ using System.Text;
 using Nalantis.Services;
 using Xunit;
 
-namespace Nalantis.UnitTests.Services
+namespace NalantisTest.UnitTests.Services
 {
     public class ApiTest 
     {

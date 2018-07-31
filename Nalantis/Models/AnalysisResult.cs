@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using System.Xml.Schema;
 using Newtonsoft.Json.Linq;
 
 namespace Nalantis.Models
@@ -67,6 +68,11 @@ namespace Nalantis.Models
         {
             this.Start = start;
             this.End = end;
+        }
+
+        public int Length()
+        {
+            return End < Start ? 0 : End - Start;
         }
     }
 }

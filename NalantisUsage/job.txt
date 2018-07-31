@@ -1,3 +1,5 @@
 We are looking for a Java developer who knows about spring and hibernate.
 
 You also have to speak French and Italian.
+
+It would be good if you also know some Ruby on Rails and HTML.

@@ -45,6 +45,7 @@ namespace Nalantis.Models
                     {
                         pair.AddCvConcept(cvConcept["conceptName"].Value<string>());
                     }
+                    MatchingConceptsPerCategory[cat].Add(pair);
                 }
 
             }
